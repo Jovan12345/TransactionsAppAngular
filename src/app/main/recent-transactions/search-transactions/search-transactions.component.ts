@@ -16,7 +16,6 @@ export class SearchTransactionsComponent implements OnInit {
   }
 
   onSearchTransactions(){
-    console.log(this.searchValue.value)
     this.transactionsService.onTransactionSearch(this.searchValue.value)
   }
 

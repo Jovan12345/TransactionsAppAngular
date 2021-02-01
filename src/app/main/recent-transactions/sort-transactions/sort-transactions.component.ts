@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TransactionsService } from '../transactions.service';
 
 @Component({
   selector: 'app-sort-transactions',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SortTransactionsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private transactionsService: TransactionsService) { }
 
   ngOnInit(): void {
   }
+
+  sortTransactions(value){
+    this.transactionsService.sortTransaction(value)
+  }
+
 
 }
