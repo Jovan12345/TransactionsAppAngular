@@ -1,4 +1,10 @@
-<p>Sort by: </p>
-<button class="btn btn-primary" (click)="sortTransactions('date')">Date</button>
-<button class="btn btn-primary" (click)="sortTransactions('beneficiary')">Beneficiary</button>
-<button class="btn btn-primary" (click)="sortTransactions('amount')">Amount</button>
+<div class="row">
+    <div class="col-md-12">
+        <p>Sort by: </p>
+        <div class="sortButtons">
+            <button class="btn btn-primary" (click)="sortTransactions('date')">Date</button>
+            <button class="btn btn-primary" (click)="sortTransactions('beneficiary')">Beneficiary</button>
+            <button class="btn btn-primary" (click)="sortTransactions('amount')">Amount</button>
+        </div>
+    </div>
+</div>
