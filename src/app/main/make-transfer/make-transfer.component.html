@@ -1,0 +1,40 @@
+<div class="makeTransfer">
+    <h2>Make a transfer</h2>
+    <form [formGroup]="makeTransactionForm" (ngSubmit)="onAddTransaction()">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>From Account:</label>
+                    <input type="text" class="form-control" formControlName="accountFromName" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>To Account:</label><br>
+                    <input type="text" class="form-control" formControlName="accountToName" placeholder="Georgia Power Electric Company">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>Amount:</label><br>
+                    <input type="number" class="form-control" formControlName="amount" placeholder="0.00">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+              <button
+                type="submit"
+                class="btn btn-success"
+                [disabled]="!makeTransactionForm.valid"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+    </form>
+</div>

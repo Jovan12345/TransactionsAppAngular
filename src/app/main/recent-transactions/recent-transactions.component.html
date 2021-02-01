@@ -1,0 +1,28 @@
+<div class="row recentTransactions">
+    <div class="col-md-12">
+        <h2>Recent Transactions</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <app-search-transactions></app-search-transactions>
+            </div>
+            <div class="col-md-6">
+                <app-sort-transactions></app-sort-transactions>
+            </div>
+        </div>
+        <br>
+        <div class="row transactionDiv" *ngFor="let transaction of transactions; let i = index">
+            <div class="col-md-2">
+                <p>{{transaction.transactionDate | date:'MMM dd'}}</p>
+            </div>
+            <div class="col-md-2">
+                <img [src]="transaction.merchantLogo" [alt]="transaction.merchant">
+            </div>
+            <div class="col-md-6">
+                <p>{{transaction.merchant}}</p>
+            </div>
+            <div class="col-md-2">
+                <p>-{{transaction.amount | currency:'USD'}}</p>
+            </div>
+        </div>
+    </div>
+</div>
