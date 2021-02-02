@@ -6,8 +6,8 @@ import { MainComponent } from "./main.component";
 import { MakeTransferComponent } from "./make-transfer/make-transfer.component";
 import { RecentTransactionComponent } from "./recent-transactions/recent-transaction/recent-transaction.component";
 import { RecentTransactionsComponent } from "./recent-transactions/recent-transactions.component";
-import localeSr from '@angular/common/locales/sr';
-registerLocaleData(localeSr);
+// import localeSr from '@angular/common/locales/sr';
+// registerLocaleData(localeSr);
 
 @NgModule({
     declarations: [
@@ -24,8 +24,8 @@ registerLocaleData(localeSr);
     exports:[
         MainComponent
     ],
-    providers:[
-        {provide: LOCALE_ID, useValue: 'sr'}
-    ]
+    // providers:[
+    //     {provide: LOCALE_ID, useValue: 'sr'}
+    // ]
 })
 export class MainModules { }

@@ -62,7 +62,10 @@
             },
             "sr": {
               "aot": true,
-              "outputPath": "dist/trans-sr"
+              "outputPath": "dist/trans-sr",
+              "i18nFile": "locale/messages.sr.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "sr"
             }
           }
         },

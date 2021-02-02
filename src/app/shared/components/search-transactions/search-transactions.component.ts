@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { TransactionsService } from '../../main/recent-transactions/transactions.service';
+import { TransactionsService } from '../../../main/recent-transactions/transactions.service';
 
 @Component({
   selector: 'app-search-transactions',

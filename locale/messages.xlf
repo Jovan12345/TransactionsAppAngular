@@ -2,15 +2,7 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="b51c392ac2e4f171bcbe1c8f8df0205a428efc78" datatype="html">
-        <source>Something went wrong</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/error-component/error-component.component.html</context>
-          <context context-type="linenumber">5</context>
-        </context-group>
-        <note priority="1" from="description">Error message shown to the user</note>
-      </trans-unit>
-      <trans-unit id="d4bf3fc267006802dc5f783b0ba1e703b3e04534" datatype="html">
+      <trans-unit id="transferFormHeader" datatype="html">
         <source>Make a transfer</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/main/make-transfer/make-transfer.component.html</context>
@@ -19,7 +11,7 @@
         <note priority="1" from="description"> Header for the component</note>
         <note priority="1" from="meaning">Form header </note>
       </trans-unit>
-      <trans-unit id="c06836eda5f8b92b2648ffc7fdf970489563a266" datatype="html">
+      <trans-unit id="transferFormLabelFromAccount" datatype="html">
         <source>From Account:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/main/make-transfer/make-transfer.component.html</context>
@@ -28,7 +20,7 @@
         <note priority="1" from="description"> Label to secribe the input field for the From Account</note>
         <note priority="1" from="meaning">form label </note>
       </trans-unit>
-      <trans-unit id="11f9f618a2c519962a60766862172ac39c0d4603" datatype="html">
+      <trans-unit id="transferFormLabelToAccount" datatype="html">
         <source>To Account:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/main/make-transfer/make-transfer.component.html</context>
@@ -37,7 +29,7 @@
         <note priority="1" from="description"> Label to secribe the input field for the To Account</note>
         <note priority="1" from="meaning">form label </note>
       </trans-unit>
-      <trans-unit id="6a9cb0b54f9ad75c585eae4cedfdd989e5f73be4" datatype="html">
+      <trans-unit id="transferFormLabelAmount" datatype="html">
         <source>Amount:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/main/make-transfer/make-transfer.component.html</context>
@@ -46,7 +38,7 @@
         <note priority="1" from="description"> Label to secribe the input field for the Amount</note>
         <note priority="1" from="meaning">form label </note>
       </trans-unit>
-      <trans-unit id="92ea53a0cbdf1982b72b71057f812cb8d66e0563" datatype="html">
+      <trans-unit id="transferFormButtonSubmit" datatype="html">
         <source>Submit</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/main/make-transfer/make-transfer.component.html</context>
@@ -63,52 +55,60 @@
         </context-group>
         <note priority="1" from="description">Title for the history of the transactions</note>
       </trans-unit>
+      <trans-unit id="b51c392ac2e4f171bcbe1c8f8df0205a428efc78" datatype="html">
+        <source>Something went wrong</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/error-component/error-component.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">Error message shown to the user</note>
+      </trans-unit>
       <trans-unit id="dab645ca4e07a11de2b8933e90fbbb4b68e91855" datatype="html">
         <source>Sort by: </source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/sort-transactions/sort-transactions.component.html</context>
+          <context context-type="sourcefile">src/app/shared/components/sort-transactions/sort-transactions.component.html</context>
           <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2f933b826a570836cab04f683970a2d22068458c" datatype="html">
         <source>Date</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/sort-transactions/sort-transactions.component.html</context>
+          <context context-type="sourcefile">src/app/shared/components/sort-transactions/sort-transactions.component.html</context>
           <context context-type="linenumber">5</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3f53a6f6a56819b145655527b57f3cb617abfdf5" datatype="html">
         <source>Beneficiary</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/sort-transactions/sort-transactions.component.html</context>
+          <context context-type="sourcefile">src/app/shared/components/sort-transactions/sort-transactions.component.html</context>
           <context context-type="linenumber">6</context>
         </context-group>
       </trans-unit>
       <trans-unit id="dfc2fb58e2a04ed944a4bd80f0a2087775134068" datatype="html">
         <source>Amount</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/sort-transactions/sort-transactions.component.html</context>
+          <context context-type="sourcefile">src/app/shared/components/sort-transactions/sort-transactions.component.html</context>
           <context context-type="linenumber">7</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1f7a0c6958185ed3b15a738a775e249c27412728" datatype="html">
         <source>Transaction completed successfully</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/success-component/success-component.component.html</context>
+          <context context-type="sourcefile">src/app/shared/components/success-component/success-component.component.html</context>
           <context context-type="linenumber">5</context>
         </context-group>
       </trans-unit>
       <trans-unit id="74bb99c6e5a5c081e8e43b8186542eb162da6c86" datatype="html">
         <source>You will be routed back to main page in <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-weight-bold&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{timeleft}}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt; "/> seconds</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/success-component/success-component.component.html</context>
+          <context context-type="sourcefile">src/app/shared/components/success-component/success-component.component.html</context>
           <context context-type="linenumber">7</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8b42a6971fc2a1a2184be88f977dadef1fd37145" datatype="html">
         <source>To account <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-weight-bold&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{account}}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> with amount of <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-weight-bold&quot;&gt;"/><x id="INTERPOLATION_1" equiv-text="{{amount | currency:&apos;USD&apos;}}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/success-component/success-component.component.html</context>
+          <context context-type="sourcefile">src/app/shared/components/success-component/success-component.component.html</context>
           <context context-type="linenumber">6</context>
         </context-group>
       </trans-unit>
