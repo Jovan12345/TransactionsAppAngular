@@ -12,25 +12,25 @@ export class TransactionsService {
 
     constructor(private router: Router) { }
 
-    getTransactions() {
+    getTransactions(): Transaction[] {
         return localStorage.getItem('transactions') ? JSON.parse(localStorage.getItem('transactions')) : this.transactions.data.slice()
     }
 
-    onTransactionAdd(newTransaction: Transaction) {
+    onTransactionAdd(newTransaction: Transaction): void {
         this.transactions.data.unshift(newTransaction)
         localStorage.setItem('transactions', JSON.stringify(this.transactions.data))
         this.transactionsChanged.next(this.transactions.data.slice())
-        this.router.navigate(['shared/success'], {state: {transaction: newTransaction}})
+        this.router.navigate(['shared/success'], { state: { transaction: newTransaction } })
     }
 
-    onTransactionSearch(searchValue: string) {
+    onTransactionSearch(searchValue: string): void {
         const filteredTransactions = searchValue === '' ? this.transactions.data : this.transactions.data.filter(value => {
             return value.merchant.toLowerCase().indexOf(searchValue) !== -1
         })
         this.transactionsChanged.next(filteredTransactions);
     }
 
-    sortTransaction(sortBy: string) {
+    sortTransaction(sortBy: string): void {
         switch (sortBy) {
             case 'date':
                 const sortedTransactionsDate = this.transactions.data.sort((a, b) => a.transactionDate - b.transactionDate)

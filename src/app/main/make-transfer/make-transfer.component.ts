@@ -4,8 +4,6 @@ import { Transaction } from '../recent-transactions/transactions.model';
 import { TransactionsService } from '../recent-transactions/transactions.service';
 
 import {newImageBase64} from '../../../assets/newImageBase64';
-import { Route } from '@angular/compiler/src/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-make-transfer',
@@ -13,7 +11,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./make-transfer.component.scss']
 })
 export class MakeTransferComponent implements OnInit {
-  makeTransactionForm = new FormGroup({
+  makeTransactionForm: FormGroup = new FormGroup({
     accountFromName: new FormControl({value: '', disabled: true}),
     accountToName: new FormControl(null, [Validators.required, Validators.minLength(4)]),
     amount: new FormControl(null, [Validators.required])
@@ -26,7 +24,7 @@ export class MakeTransferComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onAddTransaction(){
+  onAddTransaction(): void{
     let newTransaction = new Transaction(
       this.makeTransactionForm.value.amount.toFixed(2),
       '#12a580',
