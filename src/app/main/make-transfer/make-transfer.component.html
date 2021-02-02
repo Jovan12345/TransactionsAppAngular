@@ -1,6 +1,6 @@
 <div class="makeTransfer">
-    <h2 i18n="Form header | Header for the component@@transferFormHeader">Make a transfer</h2>
-    <form [formGroup]="makeTransactionForm" (ngSubmit)="onAddTransaction()">
+    <h2 i18n="Form header | Header for the component@@transferFormHeader" class="header">Make a transfer</h2>
+    <form [formGroup]="makeTransactionForm" (ngSubmit)="onAddTransaction()" class="makeTransferForm">
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
@@ -25,9 +25,9 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-              <button type="submit" class="btn btn-success" [disabled]="!makeTransactionForm.valid" i18n="form button | Button for seubmitting the Transactions form@@transferFormButtonSubmit">Submit</button>
+        <div class="row justify-content-end">
+            <div class="col-md-4">
+              <button type="submit" class="btn btn-warning" [disabled]="!makeTransactionForm.valid" i18n="form button | Button for seubmitting the Transactions form@@transferFormButtonSubmit">Submit</button>
             </div>
           </div>
     </form>

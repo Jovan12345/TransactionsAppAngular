@@ -1,6 +1,6 @@
-<div class="row recentTransactions">
-    <div class="col-md-12">
-        <h2 i18n="Title for the history of the transactions">Recent Transactions</h2>
+<div class="recentTransactions">
+    <h2 i18n="Title for the history of the transactions" class="header">Recent Transactions</h2>
+    <div class="recentTransactionsBody">
         <div class="row">
             <div class="col-md-6">
                 <app-search-transactions></app-search-transactions>
@@ -10,6 +10,7 @@
             </div>
         </div>
         <br>
-        <app-recent-transaction *ngFor="let transactionEl of transactions; let i = index" [transaction]="transactionEl"></app-recent-transaction>
+        <app-recent-transaction *ngFor="let transactionEl of transactions; let i = index" [transaction]="transactionEl">
+        </app-recent-transaction>
     </div>
 </div>

@@ -1,7 +1,18 @@
 .makeTransfer{
     background-color: white;
-    padding: 10px;
     margin-bottom: 20px;
+    border-radius: 5px;
+    .header{
+      background-color: #0c8397;
+      color: white;
+      margin-bottom: 0;
+      padding: 6px ;
+      text-align: center;
+      font-weight: 100;
+    }
+    .makeTransferForm{
+      padding: 10px;
+    }
 }
 
 input.ng-invalid.ng-touched{
