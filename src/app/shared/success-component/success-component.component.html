@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-5">
+            <div class="successScreen">
+                <h3 class="successScreenHeader" i18n>Transaction completed successfully</h3>
+                <p *ngIf="account && amount" i18n>To account <span class="font-weight-bold">{{account}}</span> with amount of <span class="font-weight-bold">{{amount | currency:'USD'}}</span></p>
+                <p class="note" i18n>You will be routed back to main page in <span class="font-weight-bold">{{timeleft}}</span> seconds</p>
+            </div>
+        </div>
+    </div>
+</div>

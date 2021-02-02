@@ -1,0 +1,14 @@
+<div class="row transactionDiv">
+    <div class="col-md-2">
+        <p>{{transaction.transactionDate | date:'MMM dd'}}</p>
+    </div>
+    <div class="col-md-2">
+        <img [src]="transaction.merchantLogo" [alt]="transaction.merchant">
+    </div>
+    <div class="col-md-6">
+        <p>{{transaction.merchant}}</p>
+    </div>
+    <div class="col-md-2">
+        <p>-{{transaction.amount | currency:'USD'}}</p>
+    </div>
+</div>

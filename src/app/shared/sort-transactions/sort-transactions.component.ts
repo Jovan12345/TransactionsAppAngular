@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TransactionsService } from '../transactions.service';
+import { TransactionsService } from '../../main/recent-transactions/transactions.service';
 
 @Component({
   selector: 'app-sort-transactions',

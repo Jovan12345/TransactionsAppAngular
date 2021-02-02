@@ -1,26 +1,31 @@
-import { CommonModule } from "@angular/common";
-import { NgModule } from "@angular/core";
+import { CommonModule, registerLocaleData } from "@angular/common";
+import { LOCALE_ID, NgModule } from "@angular/core";
 import { ReactiveFormsModule } from "@angular/forms";
+import { SharedModule } from "../shared/shared.module";
 import { MainComponent } from "./main.component";
 import { MakeTransferComponent } from "./make-transfer/make-transfer.component";
+import { RecentTransactionComponent } from "./recent-transactions/recent-transaction/recent-transaction.component";
 import { RecentTransactionsComponent } from "./recent-transactions/recent-transactions.component";
-import { SearchTransactionsComponent } from "./recent-transactions/search-transactions/search-transactions.component";
-import { SortTransactionsComponent } from "./recent-transactions/sort-transactions/sort-transactions.component";
+import localeSr from '@angular/common/locales/sr';
+registerLocaleData(localeSr);
 
 @NgModule({
     declarations: [
         MainComponent,
         MakeTransferComponent,
         RecentTransactionsComponent,
-        SearchTransactionsComponent,
-        SortTransactionsComponent
+        RecentTransactionComponent        
     ],
     imports: [
         CommonModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        SharedModule
     ],
     exports:[
         MainComponent
+    ],
+    providers:[
+        {provide: LOCALE_ID, useValue: 'sr'}
     ]
 })
 export class MainModules { }

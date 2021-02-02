@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2"
+  xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="b51c392ac2e4f171bcbe1c8f8df0205a428efc78" datatype="html">
+        <source>Something went wrong</source>
+        <target>Nesto nije u red</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/error-component/error-component.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">Error message shown to the user</note>
+      </trans-unit>
+      <trans-unit id="d4bf3fc267006802dc5f783b0ba1e703b3e04534" datatype="html">
+        <source>Make a transfer</source>
+        <target>Napravite transfer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main/make-transfer/make-transfer.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description"> Header for the component</note>
+        <note priority="1" from="meaning">Form header </note>
+      </trans-unit>
+      <trans-unit id="c06836eda5f8b92b2648ffc7fdf970489563a266" datatype="html">
+        <source>From Account:</source>
+        <target>Sa naloga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main/make-transfer/make-transfer.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description"> Label to secribe the input field for the From Account</note>
+        <note priority="1" from="meaning">form label </note>
+      </trans-unit>
+      <trans-unit id="11f9f618a2c519962a60766862172ac39c0d4603" datatype="html">
+        <source>To Account:</source>
+        <target>Na racun</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main/make-transfer/make-transfer.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note priority="1" from="description"> Label to secribe the input field for the To Account</note>
+        <note priority="1" from="meaning">form label </note>
+      </trans-unit>
+      <trans-unit id="6a9cb0b54f9ad75c585eae4cedfdd989e5f73be4" datatype="html">
+        <source>Amount:</source>
+        <target>Iznos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main/make-transfer/make-transfer.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <note priority="1" from="description"> Label to secribe the input field for the Amount</note>
+        <note priority="1" from="meaning">form label </note>
+      </trans-unit>
+      <trans-unit id="92ea53a0cbdf1982b72b71057f812cb8d66e0563" datatype="html">
+        <source>Submit</source>
+        <target>Podnesi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main/make-transfer/make-transfer.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description"> Button for seubmitting the Transactions form</note>
+        <note priority="1" from="meaning">form button </note>
+      </trans-unit>
+      <trans-unit id="aa6ce7e6e6fe5cd080713965451f25bca15a2a25" datatype="html">
+        <source>Recent Transactions</source>
+        <target>Nedavne transakcije</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main/recent-transactions/recent-transactions.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">Title for the history of the transactions</note>
+      </trans-unit>
+      <trans-unit id="dab645ca4e07a11de2b8933e90fbbb4b68e91855" datatype="html">
+        <source>Sort by: </source>
+        <target>Sortiraj po: </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/sort-transactions/sort-transactions.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2f933b826a570836cab04f683970a2d22068458c" datatype="html">
+        <source>Date</source>
+        <target>Datum</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/sort-transactions/sort-transactions.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3f53a6f6a56819b145655527b57f3cb617abfdf5" datatype="html">
+        <source>Beneficiary</source>
+        <target>Korisnik</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/sort-transactions/sort-transactions.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dfc2fb58e2a04ed944a4bd80f0a2087775134068" datatype="html">
+        <source>Amount</source>
+        <target>Iznos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/sort-transactions/sort-transactions.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1f7a0c6958185ed3b15a738a775e249c27412728" datatype="html">
+        <source>Transaction completed successfully</source>
+        <target>Transakcija je uspesno zavrsena</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/success-component/success-component.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="74bb99c6e5a5c081e8e43b8186542eb162da6c86" datatype="html">
+        <source>You will be routed back to main page in <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-weight-bold&quot;&gt;"/>
+        <x id="INTERPOLATION" equiv-text="{{timeleft}}"/>
+        <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt; "/>
+ seconds</source>
+ <target>Bicete vrateni na pocednu stranu za <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-weight-bold&quot;&gt;"/>
+        <x id="INTERPOLATION" equiv-text="{{timeleft}}"/>
+        <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt; "/>
+ sekunde</target>
+      <context-group purpose="location">
+        <context context-type="sourcefile">src/app/shared/success-component/success-component.component.html</context>
+        <context context-type="linenumber">7</context>
+      </context-group>
+    </trans-unit>
+    <trans-unit id="8b42a6971fc2a1a2184be88f977dadef1fd37145" datatype="html">
+      <source>To account <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-weight-bold&quot;&gt;"/>
+      <x id="INTERPOLATION" equiv-text="{{account}}"/>
+      <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+ with amount of <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-weight-bold&quot;&gt;"/>
+    <x id="INTERPOLATION_1" equiv-text="{{amount | currency:&apos;USD&apos;}}"/>
+    <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+  </source>
+   <target>Na racun <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-weight-bold&quot;&gt;"/>
+      <x id="INTERPOLATION" equiv-text="{{account}}"/>
+      <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+ sa iznos od <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-weight-bold&quot;&gt;"/>
+    <x id="INTERPOLATION_1" equiv-text="{{amount | currency:&apos;USD&apos;}}"/>
+    <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+  </target>
+  <context-group purpose="location">
+    <context context-type="sourcefile">src/app/shared/success-component/success-component.component.html</context>
+    <context context-type="linenumber">6</context>
+  </context-group>
+</trans-unit>
+<trans-unit id="ngb.alert.close" datatype="html">
+  <source>Close</source>
+  <target>Zatvori</target>
+  <context-group purpose="location">
+    <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/alert/alert.ts</context>
+    <context context-type="linenumber">58,61</context>
+  </context-group>
+  <context-group purpose="location">
+    <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/alert/alert.ts</context>
+    <context context-type="linenumber">72,74</context>
+  </context-group>
+</trans-unit>
+<trans-unit id="ngb.carousel.slide-number" datatype="html">
+  <source> Slide <x id="INTERPOLATION" equiv-text="ate _pauseOnHov"/>
+ of <x id="INTERPOLATION_1" equiv-text="ect(false);
+  p"/>
+</source>
+<target> Strana <x id="INTERPOLATION" equiv-text="ate _pauseOnHov"/>
+ od <x id="INTERPOLATION_1" equiv-text="ect(false);
+  p"/>
+</target>
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/carousel/carousel.ts</context>
+  <context context-type="linenumber">114,118</context>
+</context-group>
+<note priority="1" from="description">Currently selected slide number read by screen reader</note>
+</trans-unit>
+<trans-unit id="ngb.carousel.previous" datatype="html">
+<source>Previous</source>
+<target>Nazad</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/carousel/carousel.ts</context>
+  <context context-type="linenumber">132,134</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.carousel.next" datatype="html">
+<source>Next</source>
+<target>Napred</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/carousel/carousel.ts</context>
+  <context context-type="linenumber">147,151</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.datepicker.previous-month" datatype="html">
+<source>Previous month</source>
+<target>Prethodni mjesec</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation.ts</context>
+  <context context-type="linenumber">24,27</context>
+</context-group>
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation.ts</context>
+  <context context-type="linenumber">34,35</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.datepicker.next-month" datatype="html">
+<source>Next month</source>
+<target>Sledeci mjesec</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation.ts</context>
+  <context context-type="linenumber">44,48</context>
+</context-group>
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation.ts</context>
+  <context context-type="linenumber">57,61</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.datepicker.select-month" datatype="html">
+<source>Select month</source>
+<target>Izaberi mjesec</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation-select.ts</context>
+  <context context-type="linenumber">44,49</context>
+</context-group>
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation-select.ts</context>
+  <context context-type="linenumber">49,50</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.datepicker.select-year" datatype="html">
+<source>Select year</source>
+<target>Izaberi godinu</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation-select.ts</context>
+  <context context-type="linenumber">59,64</context>
+</context-group>
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation-select.ts</context>
+  <context context-type="linenumber">74</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.pagination.first" datatype="html">
+<source>««</source>
+<target>««</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts</context>
+  <context context-type="linenumber">147,148</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.pagination.previous" datatype="html">
+<source>«</source>
+<target>«</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts</context>
+  <context context-type="linenumber">153,154</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.pagination.next" datatype="html">
+<source>»</source>
+<target>»</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts</context>
+  <context context-type="linenumber">158,159</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.pagination.last" datatype="html">
+<source>»»</source>
+<target>»»</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts</context>
+  <context context-type="linenumber">164,165</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.pagination.first-aria" datatype="html">
+<source>First</source>
+<target>Prvo</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts</context>
+  <context context-type="linenumber">168,172</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.pagination.previous-aria" datatype="html">
+<source>Previous</source>
+<target>Prethodno</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts</context>
+  <context context-type="linenumber">176,177</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.pagination.next-aria" datatype="html">
+<source>Next</source>
+<target>Narednu</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts</context>
+  <context context-type="linenumber">188,189</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.pagination.last-aria" datatype="html">
+<source>Last</source>
+<target>Poslednu</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts</context>
+  <context context-type="linenumber">195,200</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.progressbar.value" datatype="html">
+<source>
+  <x id="INTERPOLATION" equiv-text="turn this._max;"/>
+</source>
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/progressbar/progressbar.ts</context>
+  <context context-type="linenumber">31,38</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.timepicker.HH" datatype="html">
+<source>HH</source>
+<target>HH</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+  <context context-type="linenumber">40,41</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.timepicker.hours" datatype="html">
+<source>Hours</source>
+<target>Sati</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+  <context context-type="linenumber">45,46</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.timepicker.MM" datatype="html">
+<source>MM</source>
+<target>MM</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+  <context context-type="linenumber">52,53</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.timepicker.minutes" datatype="html">
+<source>Minutes</source>
+<target>Minute</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+  <context context-type="linenumber">57,58</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.timepicker.increment-hours" datatype="html">
+<source>Increment hours</source>
+<target>Povecaj sate</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+  <context context-type="linenumber">62,63</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.timepicker.decrement-hours" datatype="html">
+<source>Decrement hours</source>
+<target>Smanji sate</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+  <context context-type="linenumber">67,68</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.timepicker.increment-minutes" datatype="html">
+<source>Increment minutes</source>
+<target>Povecaj minute</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+  <context context-type="linenumber">75,76</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.timepicker.decrement-minutes" datatype="html">
+<source>Decrement minutes</source>
+<target>Smanji minute</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+  <context context-type="linenumber">82</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.timepicker.SS" datatype="html">
+<source>SS</source>
+<target>SS</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+  <context context-type="linenumber">85,87</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.timepicker.seconds" datatype="html">
+<source>Seconds</source>
+<target>Sekunde</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+  <context context-type="linenumber">90,92</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.timepicker.increment-seconds" datatype="html">
+<source>Increment seconds</source>
+<target>Povecaj sekunde</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+  <context context-type="linenumber">98,99</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.timepicker.decrement-seconds" datatype="html">
+<source>Decrement seconds</source>
+<target>smanji sekunde</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+  <context context-type="linenumber">105,109</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.timepicker.PM" datatype="html">
+<source>
+  <x id="INTERPOLATION" equiv-text="sible.
+   */
+  "/>
+</source>
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+  <context context-type="linenumber">125,130</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.timepicker.AM" datatype="html">
+<source>
+  <x id="INTERPOLATION" equiv-text="Step: number;
+
+"/>
+</source>
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+  <context context-type="linenumber">116,123</context>
+</context-group>
+</trans-unit>
+<trans-unit id="ngb.toast.close-aria" datatype="html">
+<source>Close</source>
+<target>ZAtvori</target>
+
+<context-group purpose="location">
+  <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/toast/toast.ts</context>
+  <context context-type="linenumber">78,85</context>
+</context-group>
+</trans-unit>
+</body>
+</file>
+</xliff>

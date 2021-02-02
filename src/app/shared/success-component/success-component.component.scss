@@ -1,0 +1,12 @@
+.successScreen{
+    background-color: lightgreen;
+    opacity: 0.8;
+    border: 2px solid green;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 0px;
+    box-shadow: 1px 1px 100px 10px rgba(0, 0, 0, 0.8);
+    .note{
+        font-size: xx-small;
+    }
+}

@@ -4,6 +4,8 @@ import { Transaction } from '../recent-transactions/transactions.model';
 import { TransactionsService } from '../recent-transactions/transactions.service';
 
 import {newImageBase64} from '../../../assets/newImageBase64';
+import { Route } from '@angular/compiler/src/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-make-transfer',
@@ -12,7 +14,7 @@ import {newImageBase64} from '../../../assets/newImageBase64';
 })
 export class MakeTransferComponent implements OnInit {
   makeTransactionForm = new FormGroup({
-    accountFromName: new FormControl('Free Checking - $50000'),
+    accountFromName: new FormControl({value: '', disabled: true}),
     accountToName: new FormControl(null, [Validators.required, Validators.minLength(4)]),
     amount: new FormControl(null, [Validators.required])
   })
@@ -26,7 +28,7 @@ export class MakeTransferComponent implements OnInit {
 
   onAddTransaction(){
     let newTransaction = new Transaction(
-      this.makeTransactionForm.value.amount,
+      this.makeTransactionForm.value.amount.toFixed(2),
       '#12a580',
       this.makeTransactionForm.value.accountToName,
       newImageBase64,
@@ -35,6 +37,7 @@ export class MakeTransferComponent implements OnInit {
     );
 
     this.transactionsService.onTransactionAdd(newTransaction)
+    this.makeTransactionForm.reset()
   }
 
 }

@@ -3,19 +3,24 @@ import { Transaction, Transactions } from "./transactions.model";
 import jsonTransactionsData from '../../../assets/mock/transactions.json';
 import { Injectable } from "@angular/core";
 import { Subject } from "rxjs";
+import { Router } from "@angular/router";
 
 @Injectable({ providedIn: 'root' })
 export class TransactionsService {
     transactions: Transactions = jsonTransactionsData;
     transactionsChanged = new Subject<Transaction[]>();
 
+    constructor(private router: Router) { }
+
     getTransactions() {
-        return this.transactions.data.slice()
+        return localStorage.getItem('transactions') ? JSON.parse(localStorage.getItem('transactions')) : this.transactions.data.slice()
     }
 
     onTransactionAdd(newTransaction: Transaction) {
-        this.transactions.data.push(newTransaction)
+        this.transactions.data.unshift(newTransaction)
+        localStorage.setItem('transactions', JSON.stringify(this.transactions.data))
         this.transactionsChanged.next(this.transactions.data.slice())
+        this.router.navigate(['shared/success'], {state: {transaction: newTransaction}})
     }
 
     onTransactionSearch(searchValue: string) {
@@ -36,7 +41,7 @@ export class TransactionsService {
                 this.transactionsChanged.next(sortedTransactionsBeneficiary);
                 break;
             case 'amount':
-                const sortedTransactionsAmount = this.transactions.data.sort((a, b) => b.amount.localeCompare(a.amount))
+                const sortedTransactionsAmount = this.transactions.data.sort((a, b) => +b.amount - +a.amount)
                 this.transactionsChanged.next(sortedTransactionsAmount)
                 break;
             default:

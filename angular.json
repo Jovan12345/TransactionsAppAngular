@@ -59,6 +59,10 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "sr": {
+              "aot": true,
+              "outputPath": "dist/trans-sr"
             }
           }
         },
@@ -70,6 +74,9 @@
           "configurations": {
             "production": {
               "browserTarget": "TransactionsApp:build:production"
+            },
+            "sr": {
+              "browserTarget": "TransactionsApp:build:sr"
             }
           }
         },
