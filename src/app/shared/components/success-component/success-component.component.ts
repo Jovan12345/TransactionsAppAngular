@@ -12,7 +12,6 @@ export class SuccessComponentComponent implements OnInit {
   account = null
   amount = null
   constructor(private router: Router) {
-    console.log(this.router.getCurrentNavigation().extras.state)
     this.account = this.router.getCurrentNavigation().extras.state.transaction.merchant
     this.amount = this.router.getCurrentNavigation().extras.state.transaction.amount
    }
