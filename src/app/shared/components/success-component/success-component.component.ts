@@ -7,20 +7,20 @@ import { Router } from '@angular/router';
   styleUrls: ['./success-component.component.scss']
 })
 export class SuccessComponentComponent implements OnInit {
-  @Input() data;
+  @Input() data: any;
   timeleft: number = 5;
-  account = null
-  amount = null
+  account: string = null
+  amount: number = null
   constructor(private router: Router) {
     this.account = this.router.getCurrentNavigation().extras.state.transaction.merchant
     this.amount = this.router.getCurrentNavigation().extras.state.transaction.amount
-   }
+  }
 
   ngOnInit(): void {
     this.countdownTimer()
   }
 
-  countdownTimer() {
+  countdownTimer(): void {
     let timer = setInterval(() => {
       this.timeleft--;
       if (this.timeleft <= 0) {
@@ -29,5 +29,4 @@ export class SuccessComponentComponent implements OnInit {
       }
     }, 1000)
   }
-
 }

@@ -17,12 +17,11 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     NgbModule,
-    MainModules,
-    SharedModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MainModules,
+    SharedModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { TransactionsService } from '../../../main/recent-transactions/transactions.service';
 
 @Component({
@@ -6,16 +6,11 @@ import { TransactionsService } from '../../../main/recent-transactions/transacti
   templateUrl: './sort-transactions.component.html',
   styleUrls: ['./sort-transactions.component.scss']
 })
-export class SortTransactionsComponent implements OnInit {
+export class SortTransactionsComponent {
 
   constructor(private transactionsService: TransactionsService) { }
-
-  ngOnInit(): void {
-  }
 
   sortTransactions(value){
     this.transactionsService.sortTransaction(value)
   }
-
-
 }

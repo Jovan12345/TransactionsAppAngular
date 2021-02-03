@@ -11,9 +11,7 @@ export class RecentTransactionsComponent implements OnInit {
   transactions: Transaction[];
 
   constructor(private transactionsService: TransactionsService) {
-    transactionsService.transactionsChanged.subscribe(data => {
-      this.transactions = data
-    })
+    transactionsService.transactionsChanged.subscribe(data => this.transactions = data)
   }
 
   ngOnInit(): void {

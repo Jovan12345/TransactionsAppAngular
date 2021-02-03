@@ -9,12 +9,8 @@ import { Transaction } from '../transactions.model';
 export class RecentTransactionComponent implements OnInit {
   @Input() transaction: Transaction;
   leftBorderStyle: string;
-  hover;
-
-  constructor() { }
 
   ngOnInit(): void {
     this.leftBorderStyle = '7px solid' + this.transaction.categoryCode
   }
-
 }

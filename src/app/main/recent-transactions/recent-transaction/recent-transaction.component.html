@@ -1,13 +1,5 @@
 <div class="container">
-    <div 
-        class="row transactionDiv" 
-        (mouseover)="hover=true" 
-        (mouseleave)="hover=false" 
-        [ngStyle]="{
-            'borderLeft': leftBorderStyle, 
-            backgroundColor: hover==true  ? 'lightgrey' : '' 
-        }"
-    >
+    <div class="row transactionDiv" appHover [appLeftBorderColor]="transaction.categoryCode">
         <div class="col-md-2">
             <p>{{transaction.transactionDate | date:'MMM dd'}}</p>
         </div>
