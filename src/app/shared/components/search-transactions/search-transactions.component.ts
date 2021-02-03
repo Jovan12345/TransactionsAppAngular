@@ -1,8 +1,10 @@
 import { Component, OnDestroy } from '@angular/core';
-import { TransactionsService } from '../../../main/recent-transactions/transactions.service';
+import { Router } from '@angular/router';
+
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 import { Subject } from 'rxjs';
-import { Router } from '@angular/router';
+
+import { TransactionsService } from '../../../main/recent-transactions/transactions.service';
 
 @Component({
   selector: 'app-search-transactions',
@@ -14,6 +16,7 @@ export class SearchTransactionsComponent implements OnDestroy {
   searchValue = new Subject<string>();
 
   constructor(private transactionsService: TransactionsService, private router: Router) {
+    // delay 0.4 seconds before filtering the array against the search input value
     this.searchValue
       .pipe(
         debounceTime(400),

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { TransactionsService } from '../../../main/recent-transactions/transactions.service';
 
 @Component({
@@ -10,7 +11,7 @@ export class SortTransactionsComponent {
 
   constructor(private transactionsService: TransactionsService) { }
 
-  sortTransactions(value){
+  sortTransactions(value: string){
     this.transactionsService.sortTransaction(value)
   }
 }

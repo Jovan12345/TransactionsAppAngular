@@ -20,6 +20,7 @@ export class SuccessComponentComponent implements OnInit {
     this.countdownTimer()
   }
 
+  // Countdown before re-routing to main page
   countdownTimer(): void {
     let timer = setInterval(() => {
       this.timeleft--;
