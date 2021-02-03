@@ -21,10 +21,11 @@ export class MakeTransferGroup {
     }
 
     onAddTransactionGroup(): void {
+        const formValues = this.makeTransactionForm.value;
         let newTransaction = new Transaction(
-            this.makeTransactionForm.value.amount.toFixed(2),
+            formValues.amount.toFixed(2),
             "#" + Math.floor(Math.random() * 0xFFFFFF).toString(16),
-            this.makeTransactionForm.value.accountToName,
+            formValues.accountToName,
             newImageBase64,
             Date.now(),
             'Online Transactions'

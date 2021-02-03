@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Transaction } from '../transactions.model';
 
 @Component({
@@ -6,11 +6,6 @@ import { Transaction } from '../transactions.model';
   templateUrl: './recent-transaction.component.html',
   styleUrls: ['./recent-transaction.component.scss']
 })
-export class RecentTransactionComponent implements OnInit {
+export class RecentTransactionComponent {
   @Input() transaction: Transaction;
-  leftBorderStyle: string;
-
-  ngOnInit(): void {
-    this.leftBorderStyle = '7px solid' + this.transaction.categoryCode
-  }
 }

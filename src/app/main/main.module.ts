@@ -19,8 +19,6 @@ import { RecentTransactionsComponent } from "./recent-transactions/recent-transa
         ReactiveFormsModule,
         SharedModule
     ],
-    exports: [
-        MainComponent
-    ]
+    exports: [MainComponent]
 })
 export class MainModules { }
