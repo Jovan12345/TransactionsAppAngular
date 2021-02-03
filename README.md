@@ -2,10 +2,14 @@
 # TransactionsApp - Angular - READ ME
 
 This file is created to layout the steps for installation and starting the app as well as the most important parts of the Application explained on high level.  
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.6.
 
-  ## Installation
+## Description
+This app provides the functionality to display a history of recent transactions and allow the user to insert new transactions.
+The transactions can be sorted by date, name and amount. They can also be filtered by the name in the search box.
+All of the transactions are stored in the LocalStorage, and mainly through Angular service and rxjs Subjects data is spread across the app components.
+
+## Installation
 **Prerequisites**
 
 - Installed [Node.js](https://nodejs.org/en/)
