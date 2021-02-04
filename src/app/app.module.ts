@@ -8,6 +8,7 @@ import { HeaderComponent } from './core/header/header.component';
 import { MainModules } from './main/main.module';
 import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AppRoutingModule } from './app-routing.module';
     HttpClientModule,
     AppRoutingModule,
     MainModules,
-    SharedModule
+    SharedModule,
+    FontAwesomeModule
   ],
   bootstrap: [AppComponent]
 })

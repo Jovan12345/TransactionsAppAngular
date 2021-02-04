@@ -1,5 +1,11 @@
 <div class="row">
     <div class="col-md-12">
-        <input type="text" class="form-control" [(ngModel)]="userInput" placeholder="Search Transactions" (ngModelChange)="this.searchValue.next($event)">
+        <div class="searchInput">
+
+            <input type="text" class="form-control" [(ngModel)]="userInput" placeholder="Search Transactions"
+            (ngModelChange)="this.searchValue.next($event)">
+            <fa-icon class="clearIcon" [icon]="faTimesCircle" *ngIf="userInput" (click)="clearText()"></fa-icon>
+        </div>
+
     </div>
 </div>

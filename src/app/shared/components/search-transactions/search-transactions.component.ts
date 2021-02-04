@@ -6,14 +6,17 @@ import { Subject } from 'rxjs';
 
 import { TransactionsService } from '../../../main/recent-transactions/transactions.service';
 
+import {faTimesCircle} from '@fortawesome/free-solid-svg-icons'
+
 @Component({
   selector: 'app-search-transactions',
   templateUrl: './search-transactions.component.html',
   styleUrls: ['./search-transactions.component.scss'],
 })
 export class SearchTransactionsComponent implements OnDestroy {
-  userInput: string;
+  userInput: string = null;
   searchValue = new Subject<string>();
+  faTimesCircle = faTimesCircle;
 
   constructor(private transactionsService: TransactionsService, private router: Router) {
     // delay 0.4 seconds before filtering the array against the search input value
@@ -26,6 +29,11 @@ export class SearchTransactionsComponent implements OnDestroy {
         (value: string) => this.transactionsService.onTransactionSearch(value),
         () => this.router.navigate(['shared/error'])
       )
+  }
+
+  clearText(){
+    this.userInput = null
+    this.transactionsService.onTransactionSearch('')
   }
 
   ngOnDestroy() {

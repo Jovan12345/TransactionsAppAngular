@@ -9,6 +9,7 @@ import { SortTransactionsComponent } from "./components/sort-transactions/sort-t
 import { SuccessComponentComponent } from "./components/success-component/success-component.component";
 import { HoverDirective } from "./directives/hover.directive";
 import { LeftBorderColorDirective } from "./directives/left-border-color.directive";
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
     declarations: [
@@ -22,7 +23,8 @@ import { LeftBorderColorDirective } from "./directives/left-border-color.directi
     imports: [
         CommonModule,
         FormsModule,
-        SharedRoutingModule
+        SharedRoutingModule,
+        FontAwesomeModule
     ],
     exports: [
         SearchTransactionsComponent,
