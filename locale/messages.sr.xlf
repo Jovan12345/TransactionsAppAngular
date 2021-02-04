@@ -73,7 +73,7 @@
       </trans-unit>
       <trans-unit id="dab645ca4e07a11de2b8933e90fbbb4b68e91855" datatype="html">
         <source>Sort by: </source>
-        <target>Сортирај:</target>
+        <target>Сортирај: </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/sort-transactions/sort-transactions.component.html</context>
           <context context-type="linenumber">3</context>

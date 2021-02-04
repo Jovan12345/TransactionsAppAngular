@@ -1,15 +1,15 @@
 <div class="container">
     <div class="row transactionDiv" appHover [appLeftBorderColor]="transaction.categoryCode">
-        <div class="col-md-2">
+        <div class="col-md-2 col-sm-2">
             <p>{{transaction.transactionDate | date:'MMM dd'}}</p>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 col-sm-2">
             <img [src]="transaction.merchantLogo" [alt]="transaction.merchant">
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5 col-sm-5">
             <p><span class="font-weight-bold">{{transaction.merchant}}</span><br>{{transaction.transactionType}}</p><br>
         </div>
-        <div class="col-md-3 text-break">
+        <div class="col-md-3 col-sm-3 text-break">
             <p>-{{transaction.amount | usdToDiners | currency:localeCurrency }}</p>
         </div>
     </div>
