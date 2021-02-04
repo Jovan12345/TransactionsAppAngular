@@ -1,9 +1,9 @@
-import { Transaction, Transactions } from "./transactions.model";
-
-import jsonTransactionsData from '../../../assets/mock/transactions.json';
 import { Injectable } from "@angular/core";
 import { Subject } from "rxjs";
 import { Router } from "@angular/router";
+
+import { Transaction, Transactions } from "./transactions.model";
+import jsonTransactionsData from '../../../assets/mock/transactions.json';
 
 @Injectable({ providedIn: 'root' })
 export class TransactionsService {
@@ -12,6 +12,7 @@ export class TransactionsService {
 
     constructor(private router: Router) { }
 
+    // Check if transactions exist in Local storage, otherwise take the mock data
     getTransactions(): Transaction[] {
         return localStorage.getItem('transactions') ? JSON.parse(localStorage.getItem('transactions')) : this.transactions.data.slice()
     }

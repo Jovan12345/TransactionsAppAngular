@@ -15,7 +15,7 @@ export class MakeTransferGroup {
     constructor(private formBuilder: FormBuilder, private transactionsService: TransactionsService, private titleCase: TitleCasePipe) {
         this.makeTransactionForm = this.formBuilder.group({
             accountFromName: [{ value: '', disabled: true }],
-            accountToName: [null, [Validators.required, Validators.minLength(4)]],
+            merchant: [null, [Validators.required, Validators.minLength(4)]],
             amount: [null, [Validators.required]]
         })
     }
@@ -25,7 +25,7 @@ export class MakeTransferGroup {
         let newTransaction = new Transaction(
             formValues.amount.toFixed(2),
             "#" + Math.floor(Math.random() * 0xFFFFFF).toString(16),
-            this.titleCase.transform(formValues.accountToName),
+            this.titleCase.transform(formValues.merchant),
             newImageBase64,
             Date.now(),
             'Online Transactions'
@@ -34,7 +34,7 @@ export class MakeTransferGroup {
         this.makeTransactionForm.reset()
     }
 
-    getUserInput(){
+    getUserInput(): Transaction{
         return this.makeTransactionForm.value;
     }
 }

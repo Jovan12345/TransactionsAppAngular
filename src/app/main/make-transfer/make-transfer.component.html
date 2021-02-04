@@ -2,7 +2,7 @@
     <app-modal-confirm #modal [modalConfig]="modalConfig">
         <h4 *ngIf="transactionTBC">You are about to transfer <span
                 class="text-info">{{transactionTBC.amount | currency: "USD"}}</span> to the account <span
-                class="text-info">{{transactionTBC.accountToName}}</span></h4>
+                class="text-info">{{transactionTBC.merchant}}</span></h4>
     </app-modal-confirm>
 
     <h2 i18n="Form header | Header for the component@@transferFormHeader" class="header">Make a transfer</h2>
@@ -24,7 +24,7 @@
                     <label
                         i18n="form label | Label to secribe the input field for the To Account@@transferFormLabelToAccount">To
                         Account:</label><br>
-                    <input type="text" class="form-control" formControlName="accountToName"
+                    <input type="text" class="form-control" formControlName="merchant"
                         placeholder="Georgia Power Electric Company">
                 </div>
             </div>

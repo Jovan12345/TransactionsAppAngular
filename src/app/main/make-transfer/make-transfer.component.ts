@@ -4,6 +4,7 @@ import { MakeTransferGroup } from './make-transfer.group';
 import { FormGroup } from '@angular/forms';
 import { ModalConfig } from 'src/app/shared/components/modal-confirm/modal-confirm.config';
 import { ModalConfirmComponent } from 'src/app/shared/components/modal-confirm/modal-confirm.component';
+import { Transaction } from '../recent-transactions/transactions.model';
 
 @Component({
   selector: 'app-make-transfer',
@@ -12,7 +13,7 @@ import { ModalConfirmComponent } from 'src/app/shared/components/modal-confirm/m
 })
 export class MakeTransferComponent {
   @ViewChild('modal') private modalComponent: ModalConfirmComponent;
-  transactionTBC;
+  transactionTBC: Transaction;
   makeTransactionForm: FormGroup;
   modalConfig: ModalConfig = {
     modalTitle: 'Confirm Transaction',
