@@ -5,8 +5,7 @@ import { SuccessComponentComponent } from './components/success-component/succes
 
 const routes: Routes = [
     { path: 'success', component: SuccessComponentComponent },
-    { path: 'error', component: ErrorComponentComponent }
-
+    { path: 'error', component: ErrorComponentComponent },
 ];
 
 @NgModule({

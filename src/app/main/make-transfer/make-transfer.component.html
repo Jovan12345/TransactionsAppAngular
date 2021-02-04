@@ -1,34 +1,48 @@
 <div class="makeTransfer">
+    <app-modal-confirm #modal [modalConfig]="modalConfig">
+        <h4 *ngIf="transactionTBC">You are about to transfer <span
+                class="text-info">{{transactionTBC.amount | currency: "USD"}}</span> to the account <span
+                class="text-info">{{transactionTBC.accountToName}}</span></h4>
+    </app-modal-confirm>
+
     <h2 i18n="Form header | Header for the component@@transferFormHeader" class="header">Make a transfer</h2>
     <form [formGroup]="makeTransactionForm" (ngSubmit)="onAddTransaction()" class="makeTransferForm">
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
-                    <label i18n="form label | Label to secribe the input field for the From Account@@transferFormLabelFromAccount">From Account:</label>
-                    <input type="text" class="form-control" formControlName="accountFromName" placeholder="Free Checking - $50000">
+                    <label
+                        i18n="form label | Label to secribe the input field for the From Account@@transferFormLabelFromAccount">From
+                        Account:</label>
+                    <input type="text" class="form-control" formControlName="accountFromName"
+                        placeholder="Free Checking - $50000">
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
-                    <label i18n="form label | Label to secribe the input field for the To Account@@transferFormLabelToAccount">To Account:</label><br>
-                    <input type="text" class="form-control" formControlName="accountToName" placeholder="Georgia Power Electric Company">
+                    <label
+                        i18n="form label | Label to secribe the input field for the To Account@@transferFormLabelToAccount">To
+                        Account:</label><br>
+                    <input type="text" class="form-control" formControlName="accountToName"
+                        placeholder="Georgia Power Electric Company">
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
-                    <label i18n="form label | Label to secribe the input field for the Amount@@transferFormLabelAmount">Amount:</label><br>
+                    <label
+                        i18n="form label | Label to secribe the input field for the Amount@@transferFormLabelAmount">Amount:</label><br>
                     <input type="number" class="form-control" formControlName="amount" placeholder="0.00">
                 </div>
             </div>
         </div>
         <div class="row justify-content-end">
             <div class="col-md-4">
-              <button type="submit" class="btn btn-warning" [disabled]="!makeTransactionForm.valid" i18n="form button | Button for seubmitting the Transactions form@@transferFormButtonSubmit">Submit</button>
+                <button type="submit" class="btn btn-warning" [disabled]="!makeTransactionForm.valid"
+                    i18n="form button | Button for seubmitting the Transactions form@@transferFormButtonSubmit">Submit</button>
             </div>
-          </div>
+        </div>
     </form>
 </div>

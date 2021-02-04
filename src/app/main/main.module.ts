@@ -1,4 +1,4 @@
-import { CommonModule } from "@angular/common";
+import { CommonModule, TitleCasePipe } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { ReactiveFormsModule } from "@angular/forms";
 
@@ -23,6 +23,7 @@ import { RecentTransactionsComponent } from "./recent-transactions/recent-transa
         ReactiveFormsModule,
         SharedModule
     ],
-    exports: [MainComponent]
+    exports: [MainComponent],
+    providers: [TitleCasePipe]
 })
 export class MainModules { }

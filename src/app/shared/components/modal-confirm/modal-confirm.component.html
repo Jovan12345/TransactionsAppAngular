@@ -1,0 +1,16 @@
+<ng-template #modal>
+    <div class="modal-header">
+        <h5 class="modal-title">{{ modalConfig.modalTitle }}</h5>
+    </div>
+    <div class="modal-body">
+        <ng-content></ng-content>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger" (click)="close()">
+            {{ modalConfig.closeButtonLabel }}
+        </button>
+        <button type="button" class="btn btn-info" (click)="submit()">
+            {{ modalConfig.submitButtonLabel }}
+        </button>
+    </div>
+</ng-template>

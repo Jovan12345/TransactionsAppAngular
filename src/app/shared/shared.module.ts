@@ -10,6 +10,8 @@ import { SuccessComponentComponent } from "./components/success-component/succes
 import { HoverDirective } from "./directives/hover.directive";
 import { LeftBorderColorDirective } from "./directives/left-border-color.directive";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ModalConfirmComponent } from "./components/modal-confirm/modal-confirm.component";
+import { UsdToDinersPipe } from "./pipes/usd-to-diners.pipe";
 
 @NgModule({
     declarations: [
@@ -17,8 +19,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
         SortTransactionsComponent,
         SuccessComponentComponent,
         ErrorComponentComponent,
+        ModalConfirmComponent,
         HoverDirective,
-        LeftBorderColorDirective
+        LeftBorderColorDirective,
+        UsdToDinersPipe
     ],
     imports: [
         CommonModule,
@@ -31,8 +35,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
         SortTransactionsComponent,
         SuccessComponentComponent,
         ErrorComponentComponent,
+        ModalConfirmComponent,
         HoverDirective,
-        LeftBorderColorDirective
+        LeftBorderColorDirective,
+        UsdToDinersPipe
     ],
     providers: [TransactionsService]
 })
